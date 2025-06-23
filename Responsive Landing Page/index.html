@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page | Elevate Labs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">ElevateLabs</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="menu-icon" id="menuIcon">&#9776;</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Build Smarter. Grow Faster.</h1>
+      <p>Your web presence starts here. Join us and elevate your brand online.</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Elevate Labs. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.getElementById("menuIcon");
+    const navLinks = document.getElementById("navLinks");
+
+    if (menuIcon && navLinks) {
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    }
+  });
+</script>
+
+
+</body>
+</html>
